@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewpoint" content="width=j, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+        <title>Group-Up Home</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div>
+            <div class="header">
+                <!---Header to hold buttons for pages --->
+                <div class="title">
+                    <h1>GROUP-UP
+                        <a href="#" class="logOutButton" onclick="alert('Logs the user out')">LOG OUT</a>
+                        <a href="user.html" class="userInfoButton" >USER</a>
+                        <a href="host.html" class="userInfoButton" >HOST</a>
+                        <a href="index.html" class="userInfoButton" >HOME</a>
+                </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="maincontent">
+            
+            <div id="news1">
+                <div class="row">
+                    <div class="column">
+                        <div class="title">
+                            <h1>USER</h1>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <a href="index.html" class="hostButton">BACK</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+        
+            <div id="userInfoApp" class="div2">
+                <!---Area for user input --->
+                <div class="userInfoText">
+                    <p>First Name: <input v-model="firstName" type="text" placeholder="Please enter your first name" /></p>
+                    <p>{{ firstName }}</p>
+                    <p>Last Name: <input v-model="lastName" type="text" placeholder="Please enter your last name" /></p>
+                    <p>{{ lastName }}</p>
+                    <p>Phone Number: <input v-model="phoneNumber" type="text" placeholder="Please enter your Phone Number" /></p>
+                    <p>{{ phoneNumber }}</p>
+                    <p>E-mail: <input v-model="email" style="text-transform: lowercase" type="text" placeholder="Please enter your E-mail" /></p>
+                    <p style="text-transform: lowercase">{{ email }}</p>
+                    <p>Age: <input v-model="age" type="text" placeholder="Please enter your Age" /></p>
+                    <p>{{ age }}</p>
+                    <p>Gender: <select v-model="gender">
+                        <option disabled value="">Please select one</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Prefer not to say</option>
+                      </select></p>
+                    <p>{{ gender }}</p>
+                    <!---Transition demonstration of user info status --->
+                    <div class="userInfoTextAlign"><a class="setUserButton" @click="show = !show">Set User Info</a></div>
+                    <Transition>
+                        <h1 v-if="show">Your User Info Has Been Updated</h1>
+                    </Transition>
+                    
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+        <br>
+        <div class="footer"></div>
+
+    </body>
+    <script src="./script.js"></script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewpoint" content="width=j, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+        <title>Group-Up Home</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div>
+            <!---Header to hold buttons to other pages --->
+            <div class="header">
+                <div class="title">
+                    <h1>GROUP-UP
+                        <a href="#" class="logOutButton" onclick="alert('Logs the user out')">LOG OUT</a>
+                        <a href="user.html" class="userInfoButton" >USER</a>
+                        <a href="host.html" class="userInfoButton" >HOST</a>
+                        <a href="index.html" class="userInfoButton" >HOME</a>
+                </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="maincontent">
+            <!---Main Content for user input --->
+            
+            <div id="news1">
+                <div class="row">
+                    <div class="column">
+                        <div class="title">
+                            <h1>HOST</h1>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <a href="index.html" class="hostButton">BACK</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+        
+            <div id="hostingInfoApp" class="div2">
+                <div class="userInfoText">
+                    <p>Activity Title: <input v-model="activityTitle" type="text" placeholder="Please enter a title" /></p>
+                    <!--<p>{{ activityTitle }}</p>-->
+                    <p>Description:</p> <p><textarea v-model="activityDescription" placeholder="Please enter a description"></textarea></p>
+                    <!--<p>{{ activityDescription }}</p>-->
+                    <p>Time: <input v-model="activityTime" type="time" placeholder="Please enter the activitys start time" /></p>
+                    <!--<p>{{ activityTime }}</p>-->
+                    <p>Date: <input v-model="activityDate" type="date" placeholder="Please enter the activitys start date" /></p>
+                    <!--<p>{{ activityDate }}</p>-->
+                    <p>Location: <input v-model="activityLocation" type="text" placeholder="Please enter the activitys location" /></p>
+                    <!--<p>{{ activityLocation }}</p>-->
+                    <p>Requriments:</p> <p><textarea v-model="activityRequirments" placeholder="Please enter the activitys requirments"></textarea></p>
+                    <!--<p>{{ activityRequirments }}</p>-->
+                    <div class="userInfoTextAlign"><a onclick="hostgroupUp()" class="setUserButton">Host Group-Up</a></div>
+                    
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+        <br>
+        <div class="div2">
+            <!---Host Status Display --->
+            <div class="title">
+                Host Status:
+            </div>
+            <div id="hostingInfoApp">
+                <p class="userInfoText" id="hostFunctionText"></p>
+            </div>         
+        </div>
+        <br>
+        <div class="footer"></div>
+
+    </body>
+    <script src="./script.js"></script>
+</html>

@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewpoint" content="width=j, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+        <title>Group-Up Home</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <!---Header which holds buttons to other pages --->
+        <div>
+            <div class="header">
+                <div class="title">
+                    <h1>GROUP-UP
+                        <a href="#" class="logOutButton" onclick="alert('Logs the user out')">LOG OUT</a>
+                        <a href="user.html" class="userInfoButton" >USER</a>
+                        <a href="host.html" class="userInfoButton" >HOST</a>
+                        <a href="index.html" class="userInfoButton" >HOME</a>
+                </h1>
+                </div>
+            </div>
+        </div>
+        
+
+        <div>
+            <!---Main Content News and Logo --->
+            <div class="maincontent">
+                
+                <div id="news1">
+                    <div class="row">
+                        <div class="column">
+                            <div class="news">
+                                <div class="ItemHeader">
+                                    <h2>{{newsHeader}}</h2>
+                                </div>
+                                <div class="column">
+                                    <div class="ItemInfoText">{{newsMessage1}} <br><br> {{newsMessgae2}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <img class="image" src="Group-Up_Logo.png" alt="GroupUpLogoImage" width="200" height="200">
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            
+            <div class="header"></div>
+            <!--- Main Content, Activity scroll area --->
+            <div class="maincontent">
+                <div class="title">
+                    <h1>UPCOMMING EVENTS</h1>
+                    <div id="app4" class="searchbar">
+                        <p>SEARCH: <input v-model="search" type="text" placeholder="" /></p>
+            
+                        <!---<p>{{ search }}</p> --->
+                    </div>
+                </div>
+    
+                <div id="activityRouterApp">
+                    <!---<router-link class="button" to="/">Home</router-link> --->
+                    <div class="activityScrollArea">
+                        <div class="activityRow">
+                            <div class="activityColumn1">
+                                <div class="activityBase">
+                                    <div id="activity0001">
+                                        {{activityTitle}}
+                                        <br>
+                                        {{activityLocation}}
+                                        <br>
+                                        {{activityTime}}
+                                        <br>
+                                    </div>
+                                    <router-link class="activityJoinButton" to="/Component1">JOIN</router-link>
+                                </div>
+                            </div>
+                            <div class="activityColumn4">
+                                <div class="activityBase">
+                                    <div id="activity0002">
+                                        {{activityTitle}}
+                                        <br>
+                                        {{activityLocation}}
+                                        <br>
+                                        {{activityTime}}
+                                        <br>
+                                    </div>
+                                    <router-link class="activityJoinButton" to="/Component2">JOIN</router-link>
+                                </div>
+                            </div>
+                            <div class="activityColumn3">
+                                <div class="activityBase">
+                                    <div id="activity0003">
+                                        {{activityTitle}}
+                                        <br>
+                                        {{activityLocation}}
+                                        <br>
+                                        {{activityTime}}
+                                        <br>
+                                    </div>
+                                    <router-link class="activityJoinButton" to="/Component3">JOIN</router-link>
+                                </div>
+                            </div>
+                
+                
+                            <div class="activityRow">
+                                <div class="activityColumn3">
+                                    <div class="activityBase">
+                                        <div id="activity0004">
+                                            {{activityTitle}}
+                                            <br>
+                                            {{activityLocation}}
+                                            <br>
+                                            {{activityTime}}
+                                            <br>
+                                        </div>
+                                        <router-link class="activityJoinButton" to="/Component4">JOIN</router-link>
+                                    </div>
+                                </div>
+                                <div class="activityColumn2">
+                                    <div class="activityBase">
+                                        <div id="activity0005">
+                                            {{activityTitle}}
+                                            <br>
+                                            {{activityLocation}}
+                                            <br>
+                                            {{activityTime}}
+                                            <br>
+                                        </div>
+                                        <router-link class="activityJoinButton" to="/Component5">JOIN</router-link>
+                                    </div>
+                                </div>
+                                <div class="activityColumn2">
+                                    <div class="activityBase">
+                                        <div id="activity0006">
+                                            {{activityTitle}}
+                                            <br>
+                                            {{activityLocation}}
+                                            <br>
+                                            {{activityTime}}
+                                            <br>
+                                        </div>
+                                        <router-link class="activityJoinButton" to="/Component6">JOIN</router-link>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="activityRow">
+                                <div class="activityColumn4">
+                                    <div class="activityBase">
+                                        <div id="activity0007">
+                                            {{activityTitle}}
+                                            <br>
+                                            {{activityLocation}}
+                                            <br>
+                                            {{activityTime}}
+                                            <br>
+                                        </div>
+                                        <router-link class="activityJoinButton" to="/Component7">JOIN</router-link>
+                                    </div>
+                                </div>
+                                <div class="activityColumn1">
+                                    <div class="activityBase">
+                                        <div id="activity0008">
+                                            {{activityTitle}}
+                                            <br>
+                                            {{activityLocation}}
+                                            <br>
+                                            {{activityTime}}
+                                            <br>
+                                        </div>
+                                        <router-link class="activityJoinButton" to="/Component8">JOIN</router-link>
+                                    </div>
+                                </div>
+                                <div class="activityColumn1">
+                                    <div class="activityBase">
+                                        <div id="activity0009">
+                                            {{activityTitle}}
+                                            <br>
+                                            {{activityLocation}}
+                                            <br>
+                                            {{activityTime}}
+                                            <br>
+                                        </div>
+                                        <router-link class="activityJoinButton" to="/Component9">JOIN</router-link>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                    <router-view></router-view>
+                </div>
+    
+    
+                <!---Activity Templates --->
+                <script type="text/x-template" id="activity0001-template"><div>
+            
+                    <div class="maincontent">
+                        
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>ACTIVITY:</h1>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                </div>
+                            </div>
+                        <br>
+                    
+                        <div class="div2">
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>{{ activityTitle }}</h1>
+                                    </div>
+                                    <div class="userInfoText">
+                                        <p class="activityInfoTitle"> Description: <p class="activityInfo">{{ activityDescription }}</p></p>
+                                        <p class="activityInfoTitle"> Date: <p class="activityInfo">{{ activityDate }}</p></p>
+                                        <p class="activityInfoTitle"> Time: <p class="activityInfo">{{ activityTime }}</p></p>
+                                        <p class="activityInfoTitle"> Location: <p class="activityInfo">{{ activityLocation }}</p></p>
+                                        <p class="activityInfoTitle"> Requirments: <p class="activityInfo">{{ activityRequirments }}</p></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>&nbsp;</h1>
+                                    </div>
+                                    <div id="userInfoApp" class="userInfoText">
+                                        <p class="activityInfoTitle">First Name: <br><input v-model="firstName" type="text" placeholder="Please enter your first name" /></p>
+                                        <p>{{ firstName }}</p>
+                                        <p class="activityInfoTitle">Last Name: <br><input v-model="lastName" type="text" placeholder="Please enter your last name" /></p>
+                                        <p>{{ lastName }}</p>
+                                        <p class="activityInfoTitle">Phone Number: <br><input v-model="phoneNumber" type="text" placeholder="Please enter your Phone Number" /></p>
+                                        <p>{{ phoneNumber }}</p>
+                                        <p class="activityInfoTitle">E-mail: <br><input v-model="email" style="text-transform: lowercase" type="text" placeholder="Please enter your E-mail" /></p>
+                                        <p style="text-transform: lowercase">{{ email }}</p>
+                                        <p class="activityInfoTitle">Requirments: <br>
+                                            <p class="activityRequirmentsCheck">I understand and accept any and all risks posed by the given activity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserDangers"></p><label for="userRequirmentCheck">{{ activityUserDangers }}</label>
+                                            <p class="activityRequirmentsCheck">I understand and comply with all the stated requirments for the given actitivity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserRequirments"></p><label for="userRequirmentCheck">{{ activityUserRequirments }}</label>
+                                    </div>
+                                    <div class="userInfoTextAlign"><a class="setUserButton" onclick="alert('User has joined the activity')">JOIN</a></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div></script>
+    
+                <script type="text/x-template" id="activity0002-template"><div>
+            
+                    <div class="maincontent">
+                        
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>ACTIVITY:</h1>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                </div>
+                            </div>
+                        <br>
+                    
+                        <div class="div2">
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>{{ activityTitle }}</h1>
+                                    </div>
+                                    <div class="userInfoText">
+                                        <p class="activityInfoTitle"> Description: <p class="activityInfo">{{ activityDescription }}</p></p>
+                                        <p class="activityInfoTitle"> Date: <p class="activityInfo">{{ activityDate }}</p></p>
+                                        <p class="activityInfoTitle"> Time: <p class="activityInfo">{{ activityTime }}</p></p>
+                                        <p class="activityInfoTitle"> Location: <p class="activityInfo">{{ activityLocation }}</p></p>
+                                        <p class="activityInfoTitle"> Requirments: <p class="activityInfo">{{ activityRequirments }}</p></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>&nbsp;</h1>
+                                    </div>
+                                    <div id="userInfoApp" class="userInfoText">
+                                        <p class="activityInfoTitle">First Name: <br><input v-model="firstName" type="text" placeholder="Please enter your first name" /></p>
+                                        <p>{{ firstName }}</p>
+                                        <p class="activityInfoTitle">Last Name: <br><input v-model="lastName" type="text" placeholder="Please enter your last name" /></p>
+                                        <p>{{ lastName }}</p>
+                                        <p class="activityInfoTitle">Phone Number: <br><input v-model="phoneNumber" type="text" placeholder="Please enter your Phone Number" /></p>
+                                        <p>{{ phoneNumber }}</p>
+                                        <p class="activityInfoTitle">E-mail: <br><input v-model="email" style="text-transform: lowercase" type="text" placeholder="Please enter your E-mail" /></p>
+                                        <p style="text-transform: lowercase">{{ email }}</p>
+                                        <p class="activityInfoTitle">Requirments: <br>
+                                            <p class="activityRequirmentsCheck">I understand and accept any and all risks posed by the given activity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserDangers"></p><label for="userRequirmentCheck">{{ activityUserDangers }}</label>
+                                            <p class="activityRequirmentsCheck">I understand and comply with all the stated requirments for the given actitivity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserRequirments"></p><label for="userRequirmentCheck">{{ activityUserRequirments }}</label>
+                                    </div>
+                                    <div class="userInfoTextAlign"><a class="setUserButton" onclick="alert('User has joined the activity')">JOIN</a></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div></script>
+    
+                <script type="text/x-template" id="activity0003-template"><div>
+            
+                    <div class="maincontent">
+                        
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>ACTIVITY:</h1>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                </div>
+                            </div>
+                        <br>
+                    
+                        <div class="div2">
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>{{ activityTitle }}</h1>
+                                    </div>
+                                    <div class="userInfoText">
+                                        <p class="activityInfoTitle"> Description: <p class="activityInfo">{{ activityDescription }}</p></p>
+                                        <p class="activityInfoTitle"> Date: <p class="activityInfo">{{ activityDate }}</p></p>
+                                        <p class="activityInfoTitle"> Time: <p class="activityInfo">{{ activityTime }}</p></p>
+                                        <p class="activityInfoTitle"> Location: <p class="activityInfo">{{ activityLocation }}</p></p>
+                                        <p class="activityInfoTitle"> Requirments: <p class="activityInfo">{{ activityRequirments }}</p></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>&nbsp;</h1>
+                                    </div>
+                                    <div id="userInfoApp" class="userInfoText">
+                                        <p class="activityInfoTitle">First Name: <br><input v-model="firstName" type="text" placeholder="Please enter your first name" /></p>
+                                        <p>{{ firstName }}</p>
+                                        <p class="activityInfoTitle">Last Name: <br><input v-model="lastName" type="text" placeholder="Please enter your last name" /></p>
+                                        <p>{{ lastName }}</p>
+                                        <p class="activityInfoTitle">Phone Number: <br><input v-model="phoneNumber" type="text" placeholder="Please enter your Phone Number" /></p>
+                                        <p>{{ phoneNumber }}</p>
+                                        <p class="activityInfoTitle">E-mail: <br><input v-model="email" style="text-transform: lowercase" type="text" placeholder="Please enter your E-mail" /></p>
+                                        <p style="text-transform: lowercase">{{ email }}</p>
+                                        <p class="activityInfoTitle">Requirments: <br>
+                                            <p class="activityRequirmentsCheck">I understand and accept any and all risks posed by the given activity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserDangers"></p><label for="userRequirmentCheck">{{ activityUserDangers }}</label>
+                                            <p class="activityRequirmentsCheck">I understand and comply with all the stated requirments for the given actitivity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserRequirments"></p><label for="userRequirmentCheck">{{ activityUserRequirments }}</label>
+                                    </div>
+                                    <div class="userInfoTextAlign"><a class="setUserButton" onclick="alert('User has joined the activity')">JOIN</a></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div></script>
+
+                <script type="text/x-template" id="activity0004-template"><div>
+            
+                    <div class="maincontent">
+                        
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>ACTIVITY:</h1>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                </div>
+                            </div>
+                        <br>
+                    
+                        <div class="div2">
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>{{ activityTitle }}</h1>
+                                    </div>
+                                    <div class="userInfoText">
+                                        <p class="activityInfoTitle"> Description: <p class="activityInfo">{{ activityDescription }}</p></p>
+                                        <p class="activityInfoTitle"> Date: <p class="activityInfo">{{ activityDate }}</p></p>
+                                        <p class="activityInfoTitle"> Time: <p class="activityInfo">{{ activityTime }}</p></p>
+                                        <p class="activityInfoTitle"> Location: <p class="activityInfo">{{ activityLocation }}</p></p>
+                                        <p class="activityInfoTitle"> Requirments: <p class="activityInfo">{{ activityRequirments }}</p></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>&nbsp;</h1>
+                                    </div>
+                                    <div id="userInfoApp" class="userInfoText">
+                                        <p class="activityInfoTitle">First Name: <br><input v-model="firstName" type="text" placeholder="Please enter your first name" /></p>
+                                        <p>{{ firstName }}</p>
+                                        <p class="activityInfoTitle">Last Name: <br><input v-model="lastName" type="text" placeholder="Please enter your last name" /></p>
+                                        <p>{{ lastName }}</p>
+                                        <p class="activityInfoTitle">Phone Number: <br><input v-model="phoneNumber" type="text" placeholder="Please enter your Phone Number" /></p>
+                                        <p>{{ phoneNumber }}</p>
+                                        <p class="activityInfoTitle">E-mail: <br><input v-model="email" style="text-transform: lowercase" type="text" placeholder="Please enter your E-mail" /></p>
+                                        <p style="text-transform: lowercase">{{ email }}</p>
+                                        <p class="activityInfoTitle">Requirments: <br>
+                                            <p class="activityRequirmentsCheck">I understand and accept any and all risks posed by the given activity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserDangers"></p><label for="userRequirmentCheck">{{ activityUserDangers }}</label>
+                                            <p class="activityRequirmentsCheck">I understand and comply with all the stated requirments for the given actitivity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserRequirments"></p><label for="userRequirmentCheck">{{ activityUserRequirments }}</label>
+                                    </div>
+                                    <div class="userInfoTextAlign"><a class="setUserButton" onclick="alert('User has joined the activity')">JOIN</a></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div></script>
+
+                <script type="text/x-template" id="activity0005-template"><div>
+            
+                    <div class="maincontent">
+                        
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>ACTIVITY:</h1>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                </div>
+                            </div>
+                        <br>
+                    
+                        <div class="div2">
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>{{ activityTitle }}</h1>
+                                    </div>
+                                    <div class="userInfoText">
+                                        <p class="activityInfoTitle"> Description: <p class="activityInfo">{{ activityDescription }}</p></p>
+                                        <p class="activityInfoTitle"> Date: <p class="activityInfo">{{ activityDate }}</p></p>
+                                        <p class="activityInfoTitle"> Time: <p class="activityInfo">{{ activityTime }}</p></p>
+                                        <p class="activityInfoTitle"> Location: <p class="activityInfo">{{ activityLocation }}</p></p>
+                                        <p class="activityInfoTitle"> Requirments: <p class="activityInfo">{{ activityRequirments }}</p></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>&nbsp;</h1>
+                                    </div>
+                                    <div id="userInfoApp" class="userInfoText">
+                                        <p class="activityInfoTitle">First Name: <br><input v-model="firstName" type="text" placeholder="Please enter your first name" /></p>
+                                        <p>{{ firstName }}</p>
+                                        <p class="activityInfoTitle">Last Name: <br><input v-model="lastName" type="text" placeholder="Please enter your last name" /></p>
+                                        <p>{{ lastName }}</p>
+                                        <p class="activityInfoTitle">Phone Number: <br><input v-model="phoneNumber" type="text" placeholder="Please enter your Phone Number" /></p>
+                                        <p>{{ phoneNumber }}</p>
+                                        <p class="activityInfoTitle">E-mail: <br><input v-model="email" style="text-transform: lowercase" type="text" placeholder="Please enter your E-mail" /></p>
+                                        <p style="text-transform: lowercase">{{ email }}</p>
+                                        <p class="activityInfoTitle">Requirments: <br>
+                                            <p class="activityRequirmentsCheck">I understand and accept any and all risks posed by the given activity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserDangers"></p><label for="userRequirmentCheck">{{ activityUserDangers }}</label>
+                                            <p class="activityRequirmentsCheck">I understand and comply with all the stated requirments for the given actitivity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserRequirments"></p><label for="userRequirmentCheck">{{ activityUserRequirments }}</label>
+                                    </div>
+                                    <div class="userInfoTextAlign"><a class="setUserButton" onclick="alert('User has joined the activity')">JOIN</a></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div></script>
+
+                <script type="text/x-template" id="activity0006-template"><div>
+            
+                    <div class="maincontent">
+                        
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>ACTIVITY:</h1>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                </div>
+                            </div>
+                        <br>
+                    
+                        <div class="div2">
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>{{ activityTitle }}</h1>
+                                    </div>
+                                    <div class="userInfoText">
+                                        <p class="activityInfoTitle"> Description: <p class="activityInfo">{{ activityDescription }}</p></p>
+                                        <p class="activityInfoTitle"> Date: <p class="activityInfo">{{ activityDate }}</p></p>
+                                        <p class="activityInfoTitle"> Time: <p class="activityInfo">{{ activityTime }}</p></p>
+                                        <p class="activityInfoTitle"> Location: <p class="activityInfo">{{ activityLocation }}</p></p>
+                                        <p class="activityInfoTitle"> Requirments: <p class="activityInfo">{{ activityRequirments }}</p></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>&nbsp;</h1>
+                                    </div>
+                                    <div id="userInfoApp" class="userInfoText">
+                                        <p class="activityInfoTitle">First Name: <br><input v-model="firstName" type="text" placeholder="Please enter your first name" /></p>
+                                        <p>{{ firstName }}</p>
+                                        <p class="activityInfoTitle">Last Name: <br><input v-model="lastName" type="text" placeholder="Please enter your last name" /></p>
+                                        <p>{{ lastName }}</p>
+                                        <p class="activityInfoTitle">Phone Number: <br><input v-model="phoneNumber" type="text" placeholder="Please enter your Phone Number" /></p>
+                                        <p>{{ phoneNumber }}</p>
+                                        <p class="activityInfoTitle">E-mail: <br><input v-model="email" style="text-transform: lowercase" type="text" placeholder="Please enter your E-mail" /></p>
+                                        <p style="text-transform: lowercase">{{ email }}</p>
+                                        <p class="activityInfoTitle">Requirments: <br>
+                                            <p class="activityRequirmentsCheck">I understand and accept any and all risks posed by the given activity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserDangers"></p><label for="userRequirmentCheck">{{ activityUserDangers }}</label>
+                                            <p class="activityRequirmentsCheck">I understand and comply with all the stated requirments for the given actitivity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserRequirments"></p><label for="userRequirmentCheck">{{ activityUserRequirments }}</label>
+                                    </div>
+                                    <div class="userInfoTextAlign"><a class="setUserButton" onclick="alert('User has joined the activity')">JOIN</a></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div></script>
+
+                <script type="text/x-template" id="activity0007-template"><div>
+            
+                    <div class="maincontent">
+                        
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>ACTIVITY:</h1>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                </div>
+                            </div>
+                        <br>
+                    
+                        <div class="div2">
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>{{ activityTitle }}</h1>
+                                    </div>
+                                    <div class="userInfoText">
+                                        <p class="activityInfoTitle"> Description: <p class="activityInfo">{{ activityDescription }}</p></p>
+                                        <p class="activityInfoTitle"> Date: <p class="activityInfo">{{ activityDate }}</p></p>
+                                        <p class="activityInfoTitle"> Time: <p class="activityInfo">{{ activityTime }}</p></p>
+                                        <p class="activityInfoTitle"> Location: <p class="activityInfo">{{ activityLocation }}</p></p>
+                                        <p class="activityInfoTitle"> Requirments: <p class="activityInfo">{{ activityRequirments }}</p></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>&nbsp;</h1>
+                                    </div>
+                                    <div id="userInfoApp" class="userInfoText">
+                                        <p class="activityInfoTitle">First Name: <br><input v-model="firstName" type="text" placeholder="Please enter your first name" /></p>
+                                        <p>{{ firstName }}</p>
+                                        <p class="activityInfoTitle">Last Name: <br><input v-model="lastName" type="text" placeholder="Please enter your last name" /></p>
+                                        <p>{{ lastName }}</p>
+                                        <p class="activityInfoTitle">Phone Number: <br><input v-model="phoneNumber" type="text" placeholder="Please enter your Phone Number" /></p>
+                                        <p>{{ phoneNumber }}</p>
+                                        <p class="activityInfoTitle">E-mail: <br><input v-model="email" style="text-transform: lowercase" type="text" placeholder="Please enter your E-mail" /></p>
+                                        <p style="text-transform: lowercase">{{ email }}</p>
+                                        <p class="activityInfoTitle">Requirments: <br>
+                                            <p class="activityRequirmentsCheck">I understand and accept any and all risks posed by the given activity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserDangers"></p><label for="userRequirmentCheck">{{ activityUserDangers }}</label>
+                                            <p class="activityRequirmentsCheck">I understand and comply with all the stated requirments for the given actitivity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserRequirments"></p><label for="userRequirmentCheck">{{ activityUserRequirments }}</label>
+                                    </div>
+                                    <div class="userInfoTextAlign"><a class="setUserButton" onclick="alert('User has joined the activity')">JOIN</a></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div></script>
+
+                <script type="text/x-template" id="activity0008-template"><div>
+            
+                    <div class="maincontent">
+                        
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>ACTIVITY:</h1>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                </div>
+                            </div>
+                        <br>
+                    
+                        <div class="div2">
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>{{ activityTitle }}</h1>
+                                    </div>
+                                    <div class="userInfoText">
+                                        <p class="activityInfoTitle"> Description: <p class="activityInfo">{{ activityDescription }}</p></p>
+                                        <p class="activityInfoTitle"> Date: <p class="activityInfo">{{ activityDate }}</p></p>
+                                        <p class="activityInfoTitle"> Time: <p class="activityInfo">{{ activityTime }}</p></p>
+                                        <p class="activityInfoTitle"> Location: <p class="activityInfo">{{ activityLocation }}</p></p>
+                                        <p class="activityInfoTitle"> Requirments: <p class="activityInfo">{{ activityRequirments }}</p></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>&nbsp;</h1>
+                                    </div>
+                                    <div id="userInfoApp" class="userInfoText">
+                                        <p class="activityInfoTitle">First Name: <br><input v-model="firstName" type="text" placeholder="Please enter your first name" /></p>
+                                        <p>{{ firstName }}</p>
+                                        <p class="activityInfoTitle">Last Name: <br><input v-model="lastName" type="text" placeholder="Please enter your last name" /></p>
+                                        <p>{{ lastName }}</p>
+                                        <p class="activityInfoTitle">Phone Number: <br><input v-model="phoneNumber" type="text" placeholder="Please enter your Phone Number" /></p>
+                                        <p>{{ phoneNumber }}</p>
+                                        <p class="activityInfoTitle">E-mail: <br><input v-model="email" style="text-transform: lowercase" type="text" placeholder="Please enter your E-mail" /></p>
+                                        <p style="text-transform: lowercase">{{ email }}</p>
+                                        <p class="activityInfoTitle">Requirments: <br>
+                                            <p class="activityRequirmentsCheck">I understand and accept any and all risks posed by the given activity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserDangers"></p><label for="userRequirmentCheck">{{ activityUserDangers }}</label>
+                                            <p class="activityRequirmentsCheck">I understand and comply with all the stated requirments for the given actitivity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserRequirments"></p><label for="userRequirmentCheck">{{ activityUserRequirments }}</label>
+                                    </div>
+                                    <div class="userInfoTextAlign"><a class="setUserButton" onclick="alert('User has joined the activity')">JOIN</a></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div></script>
+
+                <script type="text/x-template" id="activity0009-template"><div>
+            
+                    <div class="maincontent">
+                        
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>ACTIVITY:</h1>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                </div>
+                            </div>
+                        <br>
+                    
+                        <div class="div2">
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>{{ activityTitle }}</h1>
+                                    </div>
+                                    <div class="userInfoText">
+                                        <p class="activityInfoTitle"> Description: <p class="activityInfo">{{ activityDescription }}</p></p>
+                                        <p class="activityInfoTitle"> Date: <p class="activityInfo">{{ activityDate }}</p></p>
+                                        <p class="activityInfoTitle"> Time: <p class="activityInfo">{{ activityTime }}</p></p>
+                                        <p class="activityInfoTitle"> Location: <p class="activityInfo">{{ activityLocation }}</p></p>
+                                        <p class="activityInfoTitle"> Requirments: <p class="activityInfo">{{ activityRequirments }}</p></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">
+                                        <h1>&nbsp;</h1>
+                                    </div>
+                                    <div id="userInfoApp" class="userInfoText">
+                                        <p class="activityInfoTitle">First Name: <br><input v-model="firstName" type="text" placeholder="Please enter your first name" /></p>
+                                        <p>{{ firstName }}</p>
+                                        <p class="activityInfoTitle">Last Name: <br><input v-model="lastName" type="text" placeholder="Please enter your last name" /></p>
+                                        <p>{{ lastName }}</p>
+                                        <p class="activityInfoTitle">Phone Number: <br><input v-model="phoneNumber" type="text" placeholder="Please enter your Phone Number" /></p>
+                                        <p>{{ phoneNumber }}</p>
+                                        <p class="activityInfoTitle">E-mail: <br><input v-model="email" style="text-transform: lowercase" type="text" placeholder="Please enter your E-mail" /></p>
+                                        <p style="text-transform: lowercase">{{ email }}</p>
+                                        <p class="activityInfoTitle">Requirments: <br>
+                                            <p class="activityRequirmentsCheck">I understand and accept any and all risks posed by the given activity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserDangers"></p><label for="userRequirmentCheck">{{ activityUserDangers }}</label>
+                                            <p class="activityRequirmentsCheck">I understand and comply with all the stated requirments for the given actitivity:<input type="checkbox" id="userRequirmentCheck" v-model="activityUserRequirments"></p><label for="userRequirmentCheck">{{ activityUserRequirments }}</label>
+                                    </div>
+                                    <div class="userInfoTextAlign"><a class="setUserButton" onclick="alert('User has joined the activity')">JOIN</a></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div></script>
+    
+                
+    
+    
+            </div>
+        </div>
+        <!---Page Footer --->
+        <br>
+        <div class="footer"></div>
+            
+            
+        
+        
+        
+        <!---Basic Vue Data used for consistant tesing --->
+        <script>
+            new Vue({
+                el: '#app',
+                data() {
+                    return {
+                        message: "This is vue data named message!"
+                    }
+                },
+            })
+            var app = new Vue({
+        el: '#app3',
+        data: {
+            message: 'Hello Vue:',
+            name: '',
+            password: '',
+        },
+        });
+        </script>
+    </body>
+    <script src="./script.js"></script>
+</html>

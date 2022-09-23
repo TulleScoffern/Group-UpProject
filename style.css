@@ -1,0 +1,375 @@
+
+/*==================== LAYOUT ====================*/
+.webpageshell {
+    display: block;
+    background-color: orange;
+    width: auto;
+    min-height: auto;
+    text-align: center;
+}
+
+.header {
+    min-height: 60px;
+    background-color: #73b2d6;
+    padding-bottom: 0%;
+}
+
+.maincontent {
+    background-color: #FFFFFF;
+    min-height: 200px;
+    width: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.footer {
+    height: 100px;
+    background-color: #73b2d6;
+}
+
+.div1 {
+    display: block;
+    background-color:#FFFFFF;
+    width: auto;
+    min-height: 5px;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 5%;
+    margin-right: 5%; 
+}
+
+.div2 {
+    display: block;
+    background-color:#5aaa95;
+    width: auto;
+    min-height: 5px;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.headerButtons {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10cm;
+    margin-bottom: auto;
+}
+
+.searchbar {
+    text-align: right;
+    margin-right: 5%;
+}
+
+.image{
+    height: 200px;
+    width: 200px;
+    padding-right: 5%;
+    float: right;
+}
+
+/*==================== TEXT ====================*/
+
+.title{
+    color: #1f2232;
+    font-weight: 1000;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.ItemHeader{
+    color: #1f2232;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.ItemInfoText{
+    color: #1f2232;
+    padding-top: 0%;
+    font-size: larger;
+    text-align: left;
+}
+
+.userInfoText {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+}
+
+.userInfoTextAlign {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: right;
+}
+
+.activityInfoTitle {
+    color: #1f2232;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.activityInfo {
+    color: #1f2232;
+    font-size: 100%;
+    font-weight: normal;
+    background-color:#FFFFFF;
+}
+
+.activityRequirmentsCheck {
+    color: #1f2232;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+/*==================== BUTTONS ====================*/
+
+.activityJoinButton {
+	background-color:transparent;
+	border:3px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+.activityJoinButton:hover {
+	background-color:transparent;
+}
+.activityJoinButton:active {
+	position:relative;
+	top:1px;
+}
+
+.backButton {
+	background-color:#77cedb;
+	border:3px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:12px 24px;
+	text-decoration:none;
+    float: right;
+
+}
+.backButton:hover {
+	background-color:#5d7ab3;
+}
+.backButton:active {
+	position:relative;
+	top:1px;
+}
+
+.hostButton {
+	background-color:#77cedb;
+	border:3px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:32px;
+	font-weight:bold;
+	padding:24px 48px;
+	text-decoration:none;
+    float: right;
+    margin-right: 5%;
+
+}
+.hostButton:hover {
+	background-color:#5d7ab3;
+}
+.hostButton:active {
+	position:relative;
+	top:1px;
+}
+
+.userInfoButton {
+	background-color:transparent;
+	border:3px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.userInfoButton:hover {
+	background-color:transparent;
+}
+.userInfoButton:active {
+	position:relative;
+	top:1px;
+    
+}
+
+.logOutButton {
+	background-color:transparent;
+	border:3px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.logOutButton:hover {
+	background-color:transparent;
+}
+.logOutButton:active {
+	position:relative;
+	top:1px;
+}
+
+.setUserButton {
+	background-color:transparent;
+	border:3px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+    text-align: right;
+}
+.setUserButton:hover {
+	background-color:transparent;
+}
+.setUserButton:active {
+	position:relative;
+	top:1px;
+    
+}
+
+.hostActivityButton {
+	background-color:transparent;
+	border:3px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+    text-align: right;
+}
+.hostActivityButton:hover {
+	background-color:transparent;
+}
+.hostActivityButton:active {
+	position:relative;
+	top:1px;
+    
+}
+
+/*==================== NEWS COLUMNS ====================*/
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+}
+
+.news {
+    border-style: solid;
+    color: #1f2232;
+    padding-top: 0%;
+    font-size: medium;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 1%;
+    padding-right: 15%;
+    padding-top: 0%;
+    padding-bottom: 5%;
+}
+
+/*==================== ACTVITY COLUMNS ====================*/
+
+.activityColumn1 {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    background-color:#ffbd80;
+}
+.activityColumn2 {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    background-color:#d080ff;
+}
+.activityColumn3 {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    background-color:#75cf67;
+}
+.activityColumn4 {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    background-color:#ff8080;
+}
+  
+.activityRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.activityBase {
+    border-style: solid;
+    color: #1f2232;
+    padding-top: 0%;
+    font-size: large;
+    height: 4.6cm;
+}
+
+
+
+.activityScrollArea {
+    height: 400px;
+    width:auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    border:1px solid black;
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;
+    background-color: #F2F4FF;
+}
